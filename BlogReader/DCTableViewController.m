@@ -30,8 +30,8 @@
     [super viewDidLoad];
     
     //Getting the blog data from the API
-    NSURL *blogURL = [NSURL URLWithString:@"http://blog.teamtreehouse.com/api/get_recent_summary/"];
-    //NSURL *blogURL = [NSURL URLWithString:@"https://public-api.wordpress.com/rest/v1/sites/www.devcfgc.com/posts/"];
+    //NSURL *blogURL = [NSURL URLWithString:@"http://blog.teamtreehouse.com/api/get_recent_summary/"];
+    NSURL *blogURL = [NSURL URLWithString:@"https://public-api.wordpress.com/rest/v1/sites/www.devcfgc.com/posts/"];
     
     NSData *jsonData = [NSData dataWithContentsOfURL:blogURL];
     
@@ -48,12 +48,14 @@
     
     for (NSDictionary *bpDictionary in blogPostsArray) {
         DCBlogPost *blogPost = [DCBlogPost blogPostWithTitle:[bpDictionary objectForKey:@"title"]];
-        blogPost.author = [bpDictionary objectForKey:@"author"];
-        //blogPost.author = [bpDictionary objectForKey:@"short_URL"];
+        //blogPost.author = [bpDictionary objectForKey:@"author"];
+        blogPost.author = [bpDictionary objectForKey:@"short_URL"];
         
-        blogPost.thumbnail = [bpDictionary objectForKey:@"thumbnail"];
+        //blogPost.thumbnail = [bpDictionary objectForKey:@"thumbnail"];
+        blogPost.thumbnail = [bpDictionary objectForKey:@"featured_image"];
         blogPost.date = [bpDictionary objectForKey:@"date"];
-        blogPost.url = [NSURL URLWithString:[bpDictionary objectForKey:@"url"]];
+        //blogPost.url = [NSURL URLWithString:[bpDictionary objectForKey:@"url"]];
+        blogPost.url = [NSURL URLWithString:[bpDictionary objectForKey:@"short_URL"]];
         [self.blogPosts addObject:blogPost];
     }
     

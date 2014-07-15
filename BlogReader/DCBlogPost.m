@@ -32,9 +32,13 @@
 
 - (NSString *) formattedDate {
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+    //[dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+    [dateFormatter setDateFormat:@"yyyy-MM-dd'T'HH:mm:ssZZZ"];
+    //2014-05-12T09:07:56+01:00
+    NSLog(@"tempDate: %@",self.date);
+
     NSDate *tempDate = [dateFormatter dateFromString:self.date];
-    
+
     [dateFormatter setDateFormat:@"EE MMM,dd"];
     return [dateFormatter stringFromDate:tempDate];
     
