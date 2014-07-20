@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D13E1F21197275D9005CE85E /* treehouse.png in Resources */ = {isa = PBXBuildFile; fileRef = D13E1F20197275D9005CE85E /* treehouse.png */; };
+		D13E1F21197275D9005CE85E /* bck.png in Resources */ = {isa = PBXBuildFile; fileRef = D13E1F20197275D9005CE85E /* bck.png */; };
 		D13E5FD11971C0E500FA1BA9 /* DCBlogPost.m in Sources */ = {isa = PBXBuildFile; fileRef = D13E5FD01971C0E500FA1BA9 /* DCBlogPost.m */; };
 		D1A1E65C197462B4001FE2F2 /* DCWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1A1E65B197462B4001FE2F2 /* DCWebViewController.m */; };
 		D1EBF64E19718748002D1B82 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1EBF64D19718748002D1B82 /* Foundation.framework */; };
@@ -37,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D13E1F20197275D9005CE85E /* treehouse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treehouse.png; sourceTree = "<group>"; };
+		D13E1F20197275D9005CE85E /* bck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bck.png; sourceTree = "<group>"; };
 		D13E5FCF1971C0E500FA1BA9 /* DCBlogPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCBlogPost.h; sourceTree = "<group>"; };
 		D13E5FD01971C0E500FA1BA9 /* DCBlogPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCBlogPost.m; sourceTree = "<group>"; };
 		D1A1E65A197462B4001FE2F2 /* DCWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCWebViewController.h; sourceTree = "<group>"; };
@@ -138,7 +138,7 @@
 		D1EBF65419718748002D1B82 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D13E1F20197275D9005CE85E /* treehouse.png */,
+				D13E1F20197275D9005CE85E /* bck.png */,
 				D1EBF65519718748002D1B82 /* BlogReader-Info.plist */,
 				D1EBF65619718748002D1B82 /* InfoPlist.strings */,
 				D1EBF65919718748002D1B82 /* main.m */,
@@ -241,7 +241,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D13E1F21197275D9005CE85E /* treehouse.png in Resources */,
+				D13E1F21197275D9005CE85E /* bck.png in Resources */,
 				D1EBF67D19718798002D1B82 /* MainStoryboard.storyboard in Resources */,
 				D1EBF65819718748002D1B82 /* InfoPlist.strings in Resources */,
 				D1EBF66019718748002D1B82 /* Images.xcassets in Resources */,
